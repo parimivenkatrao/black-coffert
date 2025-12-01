@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "engines": {
     "node": "24.x"
